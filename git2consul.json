@@ -9,14 +9,25 @@
       "interval": "1"
     }]
   }],
+  "logger": {
+    "name": "git2consul",
+    "streams": [
+      {
+        "level": "trace",
+        "stream": "process.stdout"
+      }
+    ]
+  },
   "consuls": [
     {
       "host": "localhost",
-      "port": 8501
+      "port": 8501,
+      "token": "mastertoken"
     },
     {
       "host": "localhost",
-      "port": 8502
+      "port": 8502,
+      "token": "mastertoken"
     }
   ]
 }
